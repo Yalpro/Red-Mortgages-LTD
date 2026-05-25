@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #CC0000;
+  --primary-dark: #8B0000;
+  --primary-mid: #B22222;
+  --primary-light: #FF4444;
+  --white: #FFFFFF;
+  --off-white: #F9F9F9;
+  --surface: #FFFFFF;
+  --surface-alt: #F5F5F5;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-muted: #6B6B6B;
+  --border: rgba(0, 0, 0, 0.08);
+  --red-light: rgba(204, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: auto !important; /* Lenis handles smooth scroll */
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--off-white);
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+/* Lenis Custom Scroll Configurations */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Accessibility Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Custom premium transitions */
+.premium-transition {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
