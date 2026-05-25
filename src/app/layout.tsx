@@ -21,26 +21,26 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://red-mortgages-ltd.vercel.app"),
+export const metadata = {
+  metadataBase: new URL("https://red-mortgages.vercel.app"),
   title: {
-    default: "Red Mortgages LTD | Mortgage & Protection Broker Liverpool",
+    default: "Red Mortgages LTD | Mortgage & Protection Advice",
     template: "%s | Red Mortgages LTD",
   },
   description:
-    "Red Mortgages LTD is an FCA-regulated whole-of-market mortgage and protection broker based in Liverpool. Jenny and Hayley help first-time buyers, home movers, remortgages and landlords find the best mortgage and protection deals.",
+    "Red Mortgages LTD provides expert mortgage, protection and insurance advice from Liverpool.",
   openGraph: {
     title: "Red Mortgages LTD | Mortgage & Protection Advice",
     description:
       "Red Mortgages LTD provides expert mortgage, protection and insurance advice from Liverpool.",
-    url: "https://red-mortgages-ltd.vercel.app",
+    url: "https://red-mortgages.vercel.app",
     siteName: "Red Mortgages LTD",
     images: [
       {
         url: "https://red-mortgages.vercel.app/Meta_image.png",
         width: 1200,
         height: 630,
-        alt: "Red Mortgages LTD",
+        alt: "Red Mortgages LTD Mortgage and Protection Advice",
         type: "image/png",
       },
     ],
@@ -53,13 +53,6 @@ export const metadata: Metadata = {
     description:
       "Red Mortgages LTD provides expert mortgage, protection and insurance advice from Liverpool.",
     images: ["https://red-mortgages.vercel.app/Meta_image.png"],
-  },
-  alternates: {
-    canonical: "https://red-mortgages.vercel.app",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
