@@ -105,11 +105,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <meta property="og:image" content="https://red-mortgages.vercel.app/Meta_image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
-      </head>
+  <link rel="icon" href="/favicon.png" sizes="any" />
+  <link rel="shortcut icon" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <meta property="og:image" content="https://red-mortgages.vercel.app/Meta_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+</head>
       <body className="antialiased font-inter bg-off-white text-text-primary selection:bg-primary selection:text-white">
         <script
           type="application/ld+json"

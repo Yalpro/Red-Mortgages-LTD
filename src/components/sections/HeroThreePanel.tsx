@@ -48,10 +48,15 @@ export default function HeroThreePanel() {
             </span>
           </FadeUp>
           <FadeUp y={20} delay={0.15} duration={0.6}>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair tracking-tight leading-tight select-none">
-              Welcome to <span className="text-primary font-bold">Red Mortgages</span>
-            </h2>
-          </FadeUp>
+  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair tracking-tight leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
+    <span className="text-white">
+      Welcome to
+    </span>{" "}
+    <span className="text-primary font-extrabold">
+      Red Mortgages
+    </span>
+  </h2>
+</FadeUp>
           <FadeUp y={15} delay={0.28} duration={0.6}>
             <p className="text-sm md:text-base text-white/80 leading-relaxed max-w-2xl mx-auto font-medium">
               We guide you through home ownership and protection with stress-free, friendly, and expert financial advice tailored to you.
